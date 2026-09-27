@@ -90,8 +90,8 @@ Example entries:
 
 ```yaml
 schema: project-wiki
-schema_version: 1.6.0
-schema_updated: 2026-09-17
+schema_version: 1.6.1
+schema_updated: 2026-09-27
 last_migrated: YYYY-MM-DD
 maintained_by_skill: project-wiki
 notes: Current schema applied.

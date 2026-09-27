@@ -8,7 +8,7 @@ argument-hint: 'init | scan | update | sync | maintain'
 
 Maintain an agent-readable knowledge base in `.project-wiki/`. Load only the workflow and project context needed for the task.
 
-Current project wiki schema version: `1.6.0` (canonical value: `./schema/project-wiki.yml`).
+Current project wiki schema version: `1.6.1` (canonical value: `./schema/project-wiki.yml`).
 
 ## Route The Task
 

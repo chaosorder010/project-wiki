@@ -9,6 +9,7 @@ Use this mode to keep the wiki healthy. `maintain` includes structural cleanup a
 1. Run [Schema Migration Workflow](#schema-migration-workflow).
 2. Run [Deterministic Structural Validation Workflow](#deterministic-structural-validation-workflow). Apply low-risk structural fixes and rerun the validator until it passes or only blocked findings remain.
 3. Do not ask the model to rediscover broken links, malformed YAML/frontmatter, duplicate IDs, invalid statuses, missing registry paths, or canonical-tree gaps already covered by the validator.
+   When duplicate IDs result from concurrent branches, preserve both distinct records. Reassign one ID and update its affected references using Git history or branch diffs; do not discard either record or guess when reference ownership is ambiguous.
 4. Check whether new CRs, ADRs, module docs, or work items are meaningfully represented in traceability maps; path and ID validity are deterministic, while adequacy of the relationship is semantic.
 5. Run [Open Questions Reconciliation](./common-policies.md#open-questions-reconciliation-workflow) to close, narrow, supersede, dismiss, or de-duplicate stale questions when evidence supports it.
 6. Run [Semantic Lint Workflow](#semantic-lint-workflow) only after deterministic validation results are known.
